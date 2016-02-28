@@ -1,0 +1,30 @@
+icon file structure
+- <icon_name>_<style>_<size>
+	- android
+		- drawable-<dpi id>
+			- <icon_name>_<style>_<size>.png
+		- ...
+	- ios
+		- <icon_name>_<style>_<size>.imageset
+			- Contents.json
+			- <icon_name>_<style>_<size>[_<multiplier>].png
+			- ...
+	- web
+		- <icon_name>_<style>_<size>_<multiplier>.png
+		- ...
+
+iOS Contents.json content:
+{
+    "images": [
+        {
+            "filename": "<icon_name>_<style>_<size>_<multiplier>x.png",
+            "idiom": "universal",
+            "scale": "1x"
+        },
+		 ...
+    ],
+    "info": {
+        "author": "xcode",
+        "version": 1
+    }
+}
